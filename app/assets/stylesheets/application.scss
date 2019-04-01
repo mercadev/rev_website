@@ -30,17 +30,17 @@
 
 @font-face {
 font-family: "DIN";
-src: url('DINAlternate-Bold.ttf');
+src: font-url('DINAlternate-Bold.ttf');
 }
 
 @font-face {
 font-family: "Helvetica";
-src: url('Helvetica.ttf');
+src: font-url('Helvetica.ttf');
 }
 
 @font-face {
 font-family: "Essonnes";
-src: url('EssonnesHeadline-Regular.otf');
+src: font-url('EssonnesHeadline-Regular.otf');
 }
 
 body {
