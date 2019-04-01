@@ -2,43 +2,51 @@
 <!-- Carousel -->
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-	<ol class="carousel-indicators">
-		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-	</ol>
-	<div class="carousel-inner" role="listbox">
-		<!-- Slide One - Set the background image for this slide in the line below -->
-		<div id="item-1" class="carousel-item active" style="background-image: url(<%= image_path 'c1.jpg' %>)">
-			<div class="carousel-caption d-none d-md-block">
-				<!-- <h1 id="mercadev" class="display-4">REVEL</h1> -->
-				<!-- <p class="lead">Développez votre marché</p> -->
+	<% photos_accueil = [
+		'AFFICHE KANSEI REVEL.4.jpg',
+		'_DSC0402.jpg',
+		'_DSC0420 fb.jpg',
+		'_DSC0518.jpg',
+		'_DSC0706.jpg',
+		'_DSC2722.jpg',
+		'_DSC2788.jpg',
+		'_DSC5134.jpg',
+		'_DSC6705.jpg',
+		'_DSC7299.jpg',
+		'_DSC8017.jpg',
+		'_DSC8449.jpg',
+		'_DSC9058.jpg',
+		'grid.jpg'
+		] %>
+
+		<!-- ordre aléatoire des photos -->
+		<% photos_accueil = photos_accueil.sample(photos_accueil.size) %>
+
+		<!-- <ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<% photos_accueil.each_index { |i| %>
+			<li data-target="#carouselExampleIndicators" data-slide-to="<%= i+1 %>"></li>
+			<% } %>
+		</ol> -->
+		<div class="carousel-inner" role="listbox">
+			<% photos_accueil.each.with_index { |photo, i| %>
+			<div class="carousel-item <%= i==0 ? 'active' : '' %>" style="background-image: url('<%= image_path("accueil/#{photo}") %>')">
+				<div class="carousel-caption d-none d-md-block">
+					<!-- <h1 id="mercadev" class="display-4">REVEL</h1> -->
+					<!-- <p class="lead">Développez votre marché</p> -->
+				</div>
 			</div>
+			<% } %>
 		</div>
-		<!-- Slide Two - Set the background image for this slide in the line below -->
-		<div id="item-2" class="carousel-item"style="background-image: url(<%= image_path 'c3.jpg' %>)">
-			<div class="carousel-caption d-none d-md-block">
-				<!-- <h1 id="mercadev" class="display-4">REVEL</h1> -->
-<!-- <h1 class="display-4">Votre site web sur mesure</h1>
-	<p class="lead">Mercadev crée votre site selon vos critères et votre identité visuelle</p> -->
-</div>
-</div>
-<!-- Slide Three - Set the background image for this slide in the line below -->
-<div id="item-3" class="carousel-item" style="background-image: url(<%= image_path 'c2.jpg' %>)">
-	<!-- <h1 id="mercadev" class="display-4">REVEL</h1> -->
-<!-- <h1 class="display-4">Réseaux sociaux</h1>
-	<p class="lead">Afin d'étendre votre clientèle, nous pouvons développer votre visibilité sur les réseaux sociaux</p> -->
-</div>
-</div>
-</div>
-<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	<span class="sr-only">Précédent</span>
-</a>
-<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-	<span class="carousel-control-next-icon" aria-hidden="true"></span>
-	<span class="sr-only">Suivant</span>
-</a>
+	</div>
+	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">Précédent</span>
+	</a>
+	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">Suivant</span>
+	</a>
 </div>
 
 <!-- Page card content -->
