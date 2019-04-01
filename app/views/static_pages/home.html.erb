@@ -1,0 +1,78 @@
+
+<!-- Carousel -->
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+	<ol class="carousel-indicators">
+		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	</ol>
+	<div class="carousel-inner" role="listbox">
+		<!-- Slide One - Set the background image for this slide in the line below -->
+		<div id="item-1" class="carousel-item active" style="background-image: url(<%= image_path 'c1.jpg' %>)">
+			<div class="carousel-caption d-none d-md-block">
+				<!-- <h1 id="mercadev" class="display-4">REVEL</h1> -->
+				<!-- <p class="lead">Développez votre marché</p> -->
+			</div>
+		</div>
+		<!-- Slide Two - Set the background image for this slide in the line below -->
+		<div id="item-2" class="carousel-item"style="background-image: url(<%= image_path 'c3.jpg' %>)">
+			<div class="carousel-caption d-none d-md-block">
+				<!-- <h1 id="mercadev" class="display-4">REVEL</h1> -->
+<!-- <h1 class="display-4">Votre site web sur mesure</h1>
+	<p class="lead">Mercadev crée votre site selon vos critères et votre identité visuelle</p> -->
+</div>
+</div>
+<!-- Slide Three - Set the background image for this slide in the line below -->
+<div id="item-3" class="carousel-item" style="background-image: url(<%= image_path 'c2.jpg' %>)">
+	<!-- <h1 id="mercadev" class="display-4">REVEL</h1> -->
+<!-- <h1 class="display-4">Réseaux sociaux</h1>
+	<p class="lead">Afin d'étendre votre clientèle, nous pouvons développer votre visibilité sur les réseaux sociaux</p> -->
+</div>
+</div>
+</div>
+<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	<span class="sr-only">Précédent</span>
+</a>
+<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+	<span class="sr-only">Suivant</span>
+</a>
+</div>
+
+<!-- Page card content -->
+<center> <h3 class="news-title">Nos actualités</h3>
+	<hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 120px;"></center>
+	<!-- card 1 -->
+	<div class="card-deck">
+		<div class="card">
+			<img class="card-img-top" src="https://i0.wp.com/larsruby.com/wp-content/uploads/2019/01/interview-as-revel-sofian-azel.jpg" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">REVEL ou la révélation</h5>
+				<p class="card-text">Rencontre avec Azel et Sofian, le duo artistique plus connu sous le nom de AS.REVEL.<br>
+				Et quand l’Amour, l’Art et l’Âme s’entremêlent intensément, cela donne naissance à une incroyable révélation…</p>
+				<p class="card-text"><small class="text-muted">Ajouté il y'a 3 minutes</small></p>
+			</div>
+		</div>
+
+		<!-- card 2 -->
+		<div class="card">
+			<img class="card-img-top" src="https://static.wixstatic.com/media/a03743_b572408ac15643bdb006e6e37f1877d8~mv2_d_3633_4000_s_4_2.jpg" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">KSENIA la révélation</h5>
+				<p class="card-text">Révélée dans Faust magazine, Ksenia fut la plus jeune modèle REVEL à poser pour un aussi beau magazine !.</p>
+				<p class="card-text"><small class="text-muted">Ajouté il y'a 3 minutes</small></p>
+			</div>
+		</div>
+
+		<!-- card 3 -->
+		<div class="card">
+			<img class="card-img-top" src="<%= image_path 'keos.jpg' %>" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">à ne pas manquer</h5>
+				<p class="card-text">N'hésitez pas à venir et rencontrer REVEL sur un événement 100% Mode organisé en partenariat avec KEOS.</p>
+				<p class="card-text"><small class="text-muted">Ajouté il y'a 3 minutes</small></p>
+			</div>
+		</div> 
+	</div>
