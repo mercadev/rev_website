@@ -230,42 +230,100 @@
 	margin-left: auto;
 }
 
-.footer-bar{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	border-bottom: 2px solid black;
-	border-top:2px solid black;
+.row #m-footer{
+	width: 100%;
+	max-width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+}
+
+
+.card-b{
+	height: 25vw;
+	text-align: center;
+	border: none;
+	background: rgb(30, 30, 30);
+	color: white;
+}
+
+.card-w{
+	height: 25vw;
+	text-align: center;
+	border: none;
+	background: rgb(245, 245, 245);
 	color: black;
-	height: auto;
-	padding-left: 3%;
-	padding-right: 3%;
 }
 
-.logo-footer-content{
-	margin-left: 3%;
+@media screen and (max-width: 1000px) {
+	.row .mb-0 #m-footer{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.card-w{
+		height:auto;
+		padding-bottom: 1.5rem;
+		padding-top: 1.5rem;
+	}
+
+	.card-b{
+		height:auto;
+		padding-bottom: 1.5rem;
+		padding-top: 1.5rem;
+	}
+}
+.row .card-w a{
+	margin-right: 1.5rem;
+	margin-left: 1.5rem;
 }
 
-hr {
-	border-top: 2px solid #9d833e;
-	;
+.card-b a{
+	color: white;
+	margin: 0;
+}
+.card-b a:hover {
+	color: #9d833e;
+	text-decoration: none;
+	margin: 0;
 }
 
-#contact-job{
-	margin-bottom: 2px;
+
+#m-footer h3{
+	text-transform: uppercase;
+	margin-bottom: 1.5rem;
 }
 
-hr-job {
-	border-top: 1px solid #9d833e;
-	height: 0.5rem;
-	margin-bottom: 0.5rem;
+.footer-down{
+	background: black;
+	color: white;
 }
 
-#infos-contact{
-	height: 40px;
+.footer-down a{
+	color: white;
 }
 
+.footer-down a:hover{
+	color: #9d833e;
+	text-decoration: none;
+}
+
+.footer-down .btn{
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	background-color: transparent;
+	border-color: white;
+}
+
+#legacy_btn a{
+	color: black;
+}
+
+#legacy_btn a:hover{
+	color: #9d833e;
+	text-decoration: none;
+}
 #contact-mail{
 	color: var(--m-orange);
 	text-decoration: underline;
@@ -296,8 +354,4 @@ hr-job {
 
 .pb-3, .py-3 {
 	padding-bottom: 0 !important;
-}
-
-#design-by{
-	margin-bottom: 2%;
 }
