@@ -201,3 +201,13 @@
  	align-items: center;
  	flex-direction: column;
  }
+
+ .border-r{
+ border-right: solid 2px white;
+ }
+
+ @media screen and (max-width: 1000px) {
+	.border-r{
+	border-right: none;
+	}
+}
